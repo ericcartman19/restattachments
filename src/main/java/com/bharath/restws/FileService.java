@@ -40,7 +40,7 @@ public class FileService {
 		
 		File file = new File(FILE_PATH);
 		ResponseBuilder responseBuilder = Response.ok(file);
-		responseBuilder.header("Content-Disposition", "attachment;archivoDescargadoEjemplo.jpg");
+		responseBuilder.header("Content-Disposition", "attachment;filename=archivoDescargadoEjemplo.jpg");
 		return responseBuilder.build();
 	}
 	
